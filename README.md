@@ -1,2 +1,2 @@
 # cybersecurity-masters-portfolio
-Graduate cybersecurity portfolio featuring hands-on projects in risk management, network defense, digital forensics, security analysis, and IT management.
+This repository showcases selected projects and technical work completed during my Master’s in Cybersecurity with a concentration in IT Management at Southern New Hampshire University (SNHU). The portfolio demonstrates practical experience in cybersecurity risk management, network assessment and defense, digital forensics, human factors in security, and enterprise IT.
