@@ -117,3 +117,77 @@ Separate subnets and VLANs isolate critical departments and services while allow
 - Redundant DNS and DHCP services improve availability.
 - Address space was reserved to accommodate future departments and network growth.
 
+## Network Diagrams
+
+### 1. Current Network Architecture
+
+The initial environment connects the Dallas headquarters and Memphis office, with significant dependency on the Dallas infrastructure for connectivity and shared resources.
+
+![Current Network Architecture](diagrams/01-current-network.jpeg)
+
+### 2. Current Physical & Organizational Network
+
+This diagram documents the original physical and organizational network layout, including routers, switches, wireless access points, servers, applications, and connectivity between Dallas and Memphis.
+
+![Current Physical Network](diagrams/02-current-network-labeled.png)
+
+### 3. Observed Network Traffic Flows
+
+Traffic-flow analysis was used to map important communication across the existing environment, including MySQL application-to-database traffic, SSH administrative access, and RTP/VoIP communication.
+
+![Observed Network Traffic](diagrams/03-organizational-network.png)
+
+### 4. Proposed Enterprise Network Architecture
+
+The proposed architecture expands the environment to Dallas, Memphis, Houston, and Kansas City while introducing network segmentation, site-level security controls, centralized services, VPN connectivity, and a more resilient multi-site design.
+
+![Proposed Enterprise Network Architecture](diagrams/04-proposed-network-architecture.jpg)
+
+### 5. Branch Office Architecture
+
+Individual branch designs were developed for Memphis, Houston, and Kansas City to support local users, wireless connectivity, applications, infrastructure services, and site-specific operational requirements.
+
+![Branch Office Architecture](diagrams/05-branch-office-architecture.jpg)
+
+
+## Security & Resilience Improvements
+
+The redesigned architecture applies a defense-in-depth approach to improve the confidentiality, integrity, and availability of the network.
+
+Key security and resilience improvements include:
+
+- Network segmentation using VLANs and dedicated subnets
+- Next-generation firewalls with IDS/IPS capabilities
+- DMZ isolation for public-facing services
+- RADIUS and Active Directory integration for centralized authentication
+- Restricted management access for administrative systems
+- TLS encryption for sensitive database communication
+- Secure VPN connectivity for remote and inter-site access
+- SIEM integration for centralized logging and security monitoring
+- Dual ISP connectivity and redundant network paths
+- Automatic failover and load balancing
+- QoS prioritization for VoIP and other latency-sensitive traffic
+- Regular configuration backups and disaster recovery planning
+
+## Skills & Technologies Demonstrated
+
+`TCP/IP` `VLANs` `Subnetting` `WAN` `SD-WAN` `VPN` `OSPF` `QoS`  
+`Firewalls` `IDS/IPS` `SIEM` `RADIUS` `Active Directory` `DNS` `DHCP`  
+`SSH` `MySQL` `RTP/VoIP` `Wireshark` `Network Security` `High Availability`
+
+## Full Project Report
+
+The complete project report contains the detailed network assessment, protocol and traffic analysis, performance and security findings, proposed architecture, IP addressing strategy, implementation considerations, and supporting research.
+
+[View Full Network Analysis & Architecture Report](Final-Project-Network-Analysis.pdf)
+
+## Key Takeaways
+
+This project gave me experience approaching network architecture from both networking and cybersecurity perspectives. Rather than focusing only on connectivity, I evaluated how segmentation, encryption, access control, monitoring, redundancy, and traffic prioritization work together to create a more secure and resilient enterprise environment.
+
+The project also strengthened my understanding of analyzing an existing environment, identifying technical risks, and translating those findings into a scalable network design.
+
+---
+
+*Academic portfolio project completed for IT-640 Telecommunications and Networking. The organization and network environment used in this project are fictional and intended for educational purposes.*
+
